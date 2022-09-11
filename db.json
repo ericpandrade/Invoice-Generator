@@ -1,3 +1,12 @@
 {
-  "clientes": []
+  "clientes": [
+    {
+      "corporateName": "Testando criação",
+      "email": "ericpandrade085@gmail.com",
+      "taxRegime": "Simples Nacional",
+      "cnpj": "12.312.312/4124-12",
+      "isActive": true,
+      "id": 1
+    }
+  ]
 }
