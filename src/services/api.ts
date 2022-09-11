@@ -1,5 +1,5 @@
 import Axios from "axios";
 
 export default Axios.create({
-  baseURL: process.env.REACT_APP_API,
+  baseURL: "https://my-json-server.typicode.com/ericpandrade/Invoice-Generator",
 });
