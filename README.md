@@ -32,27 +32,6 @@ Realiação de um teste técnico que consiste em criar em uma administração de
 <br/>
 <br/>
 
-## Demo
-
-<span style="font-family: 'Poppins', sans-serif;font-size:9pt">
-
-Você pode acompanhar o site pelo Link:
-
-</span>
-
-<br/>
-
-## Installation
-
-<span style="font-family: 'Poppins', sans-serif;font-size:9pt">
-Install my-project with npm
-</span>
-
-```bash
-  npm install my-project
-  cd my-project
-```
-
 ## Run Locally
 
 <span style="font-family: 'Poppins', sans-serif;font-size:9pt">
