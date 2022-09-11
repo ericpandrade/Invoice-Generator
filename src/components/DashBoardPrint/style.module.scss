@@ -1,0 +1,43 @@
+main {
+  height: max-content;
+}
+
+.tableContainer {
+  display: block;
+
+  background: var(--table-color);
+
+  padding: 2rem;
+  width: 90%;
+
+  margin: 0 auto;
+
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+
+  .cardAntd {
+    width: 100%;
+  }
+}
+
+.chart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardsContainer {
+  padding: 2.5rem 0;
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  @media (max-width: 1050px) {
+    justify-content: center;
+  }
+
+  gap: 1rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,116 @@
+.mainContainerDashBoard {
+  min-height: 100vh;
+  height: max-content;
+  background: var(--dashboard-background);
+  min-width: 320px;
+
+  padding: 0 0 3rem;
+}
+
+.cardsContainer {
+  padding: 2.5rem 0;
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  @media (max-width: 1050px) {
+    justify-content: center;
+  }
+
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.tableContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+  }
+
+  background: #fff;
+
+  padding: 2rem;
+  width: 90%;
+
+  margin: 0 auto;
+
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+
+  .cardAntd {
+    width: 100%;
+  }
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+
+  background: var(--card-color);
+  width: 300px;
+  height: 150px;
+
+  padding: 0 1.75rem;
+
+  border-radius: 10px;
+
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h1 {
+      margin: 0;
+      font: 600 1.15rem Poppins, sans-serif;
+      text-align: center;
+      color: var(--text-color);
+    }
+
+    h2 {
+      margin: 0;
+      font: 600 2.5rem Poppins, sans-serif;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      gap: 1rem;
+
+      border: 0;
+      background: transparent;
+      appearance: none;
+
+      width: max-content;
+
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-0.15rem);
+      }
+    }
+  }
+}
+
+.dashboardPrint {
+  display: none;
+  visibility: hidden;
+}

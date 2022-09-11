@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #15b273;
+  --theme-color: #fff;
+  --text-color: #282a36;
+  --card-color: #fafefd;
+  --table-color: #fafefd;
+  --dashboard-background: #f5f6fa;
+  --main-invoices: #fdfdfd;
+  --main-home: #fff;
+}
+
+:root.darkTheme {
+  --primary-color: #15b273;
+  --theme-color: #44475a;
+  --text-color: #fff;
+  --card-color: #6272a4;
+  --table-color: #6272a4;
+  --main-home: #282a36;
+  --dashboard-background: #282a36;
+  --main-invoices: #282a36;
+}
+
+@media (max-width: 1080px) {
+  /* TABLET */
+
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  /* CELULAR */
+
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem Inter, sans-serif;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}

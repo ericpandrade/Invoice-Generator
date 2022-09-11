@@ -1,0 +1,94 @@
+.mainContainerInvoices {
+  min-width: 320px;
+  min-height: 100vh;
+
+  height: max-content;
+
+  background: var(--main-invoices);
+
+  padding: 0 0 3rem 0;
+}
+
+.headerContainer {
+  background: var(--primary-color);
+  height: 275px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font: 400 1.35rem Poppins, sans-serif;
+    color: #fff;
+    padding-bottom: 5rem;
+    text-align: center;
+
+    strong {
+      font: 600 1.35rem Poppins, sans-serif;
+    }
+  }
+}
+
+.sectionContainer {
+  width: 100%;
+  width: 90%;
+
+  max-width: 1000px;
+
+  border-radius: 1rem;
+  padding: 3rem 2rem 0.5rem 2rem;
+
+  background: #fff;
+  margin: -125px auto 0;
+
+  box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.containerControllersButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  button {
+    border: 0;
+    background: transparent;
+    appearance: none;
+  }
+}
+
+.containerButtons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0 0 1rem;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    appearance: none;
+
+    border: 0;
+
+    font: 500 1rem Poppins, sans-serif;
+
+    padding: 0.6rem 1.5rem;
+    background: var(--primary-color);
+
+    color: #fff;
+
+    border-radius: 5px;
+
+    @media (max-width: 450px) {
+      width: 200px;
+      padding: 0.6rem 0;
+    }
+  }
+}

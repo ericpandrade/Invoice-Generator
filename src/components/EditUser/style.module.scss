@@ -1,0 +1,25 @@
+.finalizeButton {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    border: 1px solid var(--primary-color);
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    width: 150px;
+    height: 40px;
+
+    font: 500 1rem Poppins, sans-serif;
+  }
+}
