@@ -77,6 +77,7 @@ const DashBoard = () => {
       .get("clientes", {
         params: {
           taxRegime: "Simples Nacional",
+          isActive: true,
         },
       })
       .then((response) => setDataClientsSimpleNational(response.data))
@@ -89,6 +90,7 @@ const DashBoard = () => {
       .get("clientes", {
         params: {
           taxRegime: "Lucro Presumido",
+          isActive: true,
         },
       })
       .then((response) => setDataClientsActivePresumedProfit(response.data))
@@ -96,7 +98,7 @@ const DashBoard = () => {
   };
 
   const checkIfUserIsLoggedIn = () => {
-    if (stateLogin === "false") {
+    if (stateLogin === "false" || !stateLogin) {
       message.warn("Você precisa estar logado para acessar essa página!", 2);
       goToLoginPage();
     }
