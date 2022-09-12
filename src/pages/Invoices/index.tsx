@@ -60,7 +60,7 @@ const Invoices = () => {
   };
 
   const checkIfUserIsLoggedIn = () => {
-    if (stateLogin === "false") {
+    if (stateLogin === "false" || !stateLogin) {
       message.warn("Você precisa estar logado para acessar essa página!", 2);
       controlNavigate.goToLoginPage();
     }
